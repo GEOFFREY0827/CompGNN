@@ -2,8 +2,8 @@ import unittest
 
 import torch
 
-from compgnn.relation_retrieval import Edge, RelationConditionedRetriever
-from compgnn.retrieval_rl import RetrievalRLExample, run_rl_epoch, score_node_action
+from compgnn.experiments.latest.relation_retrieval import Edge, RelationConditionedRetriever
+from compgnn.experiments.latest.retrieval_rl import RetrievalRLExample, run_rl_epoch, score_node_action
 
 
 class RetrievalRLTests(unittest.TestCase):

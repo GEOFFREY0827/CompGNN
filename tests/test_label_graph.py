@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from compgnn.label_graph import infer_relation_edges
+from compgnn.experiments.archive.label_graph import infer_relation_edges
 
 
 class LabelGraphTests(unittest.TestCase):

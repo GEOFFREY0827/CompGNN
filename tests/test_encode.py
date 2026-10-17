@@ -1,6 +1,6 @@
 import unittest
 
-from compgnn.encode import parse_subtasks, prepare_records, resolve_column
+from compgnn.core.encode import parse_subtasks, prepare_records, resolve_column
 
 
 class PreparationTests(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 
 import torch
 
-from compgnn.relation_retrieval import (
+from compgnn.experiments.latest.relation_retrieval import (
     Edge,
     RelationConditionedRetriever,
     extract_k_hop_subgraph,

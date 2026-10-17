@@ -16,7 +16,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from .intent_reconstruction import load_split
+from ...core.intent_reconstruction import load_split
 
 
 def make_memory(examples, targets, index, memory_size, rng):

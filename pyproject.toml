@@ -12,9 +12,8 @@ dependencies = ["datasets>=3,<5", "sentence-transformers>=3,<6", "numpy>=1.26,<3
 tracking = ["wandb>=0.17,<1"]
 
 [project.scripts]
-compgnn-encode = "compgnn.encode:main"
-compgnn-encode = "compgnn.encode:main"
-compgnn-label-graph = "compgnn.label_graph:main"
+compgnn-encode = "compgnn.core.encode:main"
+compgnn-label-graph = "compgnn.experiments.archive.label_graph:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -17,7 +17,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from .intent_reconstruction import load_split, mean_baseline
+from ...core.intent_reconstruction import load_split, mean_baseline
 
 
 class EdgeGuidedRetriever(nn.Module):
