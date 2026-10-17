@@ -29,6 +29,11 @@ class PreparationTests(unittest.TestCase):
             resolve_column(["a", "b"], None, ["a", "b"], "original")
         self.assertEqual(resolve_column(["a", "b"], "b", [], "original"), "b")
 
+    def test_current_dataset_schema(self):
+        columns = ["id", "original_task", "decomposition", "harm_index", "label", "task_type"]
+        self.assertEqual(resolve_column(columns, None, ["Task", "task_type", "task"], "task"), "task_type")
+        self.assertEqual(resolve_column(columns, None, ["decomposed_subtasks", "subtasks", "decomposition"], "subtasks"), "decomposition")
+
 
 if __name__ == "__main__":
     unittest.main()
