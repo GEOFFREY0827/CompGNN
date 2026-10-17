@@ -8,8 +8,13 @@ version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = ["datasets>=3,<5", "sentence-transformers>=3,<6", "numpy>=1.26,<3"]
 
+[project.optional-dependencies]
+tracking = ["wandb>=0.17,<1"]
+
 [project.scripts]
 compgnn-encode = "compgnn.encode:main"
+compgnn-encode = "compgnn.encode:main"
+compgnn-label-graph = "compgnn.label_graph:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
